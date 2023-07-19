@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arga Comunicação</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/tailwind.config.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header class="flex flex-col bg-black justify-center">
+    <div class="flex h-full justify-center place-items-center sticky top-0 bg-black shadow-lg z-0">
+      <nav
+        class="flex justify-between place-items-center h-24 w-2/3 text-white font-poiret text-xl xl:text-2xl">
+        <a class="logo flex h-4/5 place-items-center" href="/">
+          <img src="assets/arga.png" alt="Logo Arga" class="h-full">
+        </a>
+        <ul class="nav-list flex w-2/3 h-full justify-between hidden lg:flex">
+          <a class="nav-link grid h-full place-items-center" href="#about">
+            <li class="nav-item">QUEM SOMOS</li>
+          </a>
+          <a class="nav-link grid h-full  place-items-center" href="#services">
+            <li class="nav-item">SERVIÇOS</li>
+          </a>
+          <a class="nav-link grid h-full  place-items-center" href="#contact">
+            <li class="nav-item">CONTATO</li>
+          </a>
+        </ul>
+        <button class="mobile-menu-icon lg:hidden" onclick="showMenu()">
+          <img src="/assets/menu-icon.svg">
+        </button>
+      </nav>
+    </div>
+    <div
+      class="grid menu-mobile h-full place-items-center bg-black text-white font-poiret text-xl z-1 hidden lg:hidden">
+      <ul class="nav-list flex flex-col w-2/3 -pt-24 -pb-24 place-items-center text-white font-poiret text-2xl">
+        <a class="nav-link grid place-items-center border-white border-b-[1px] h-44 w-full" href="#about"
+          onclick="showMenu()">
+          <li class="nav-item">QUEM SOMOS</li>
+        </a>
+        <a class="nav-link grid place-items-center border-white border-b-[1px] h-44 w-full" href="#services"
+          onclick="showMenu()">
+          <li class="nav-item">SERVIÇOS</li>
+        </a>
+        <a class="nav-link grid place-items-center h-44 w-full" href="#contact" onclick="showMenu()">
+          <li class="nav-item">CONTATO</li>
+        </a>
+      </ul>
+    </div>
+  </header>
+</body>
+
+</html>
