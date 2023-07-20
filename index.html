@@ -13,10 +13,9 @@
 </head>
 
 <body>
-  <header class="flex flex-col bg-black justify-center">
-    <div class="flex h-full justify-center place-items-center sticky top-0 bg-black shadow-lg z-0">
-      <nav
-        class="flex justify-between place-items-center h-24 w-2/3 text-white font-poiret text-xl xl:text-2xl">
+  <header class="flex flex-col sticky top-0 left-0 right-0 bg-black justify-center z-[99999999]">
+    <div class="flex h-full justify-center place-items-center bg-black shadow-lg">
+      <nav class="flex justify-between place-items-center h-24 w-2/3 text-white font-poiret text-xl xl:text-2xl">
         <a class="logo flex h-4/5 place-items-center" href="/">
           <img src="assets/arga.png" alt="Logo Arga" class="h-full">
         </a>
@@ -36,8 +35,7 @@
         </button>
       </nav>
     </div>
-    <div
-      class="grid menu-mobile h-full place-items-center bg-black text-white font-poiret text-xl z-1 hidden lg:hidden">
+    <div class="grid menu-mobile h-full place-items-center bg-black text-white font-poiret text-xl hidden lg:hidden">
       <ul class="nav-list flex flex-col w-2/3 -pt-24 -pb-24 place-items-center text-white font-poiret text-2xl">
         <a class="nav-link grid place-items-center border-white border-b-[1px] h-44 w-full" href="#about"
           onclick="showMenu()">
@@ -53,6 +51,76 @@
       </ul>
     </div>
   </header>
+
+  <main class="grid place-items-center bg-white">
+    <section id="initial-container"
+      class="grid h-screen bg-[url('/assets/initial-conteiner.png')] bg-cover bg-center -mt-24 place-items-center w-full">
+      <div class="grid w-2/3 h-1/2 mt-24 bg-black opacity-75 rounded-xl text-white place-items-center p-5 md:px-7">
+        <h2 class="font-marcellus text-center text-4xl md:text-6xl 2xl:text-7xl">INSPIRAÇÃO EM CADA PRATO</br> ARTE EM
+          CADA MORDIDA</h2>
+        <h3 class="font-marcellus text-center text-xl md:text-2xl xl:text-3xl 2xl:text-4xl">MARKETING GASTRONÔMICO,
+          COMUNICAÇÃO E </br> CONSTRUÇÃO DE MARCA</h3>
+      </div>
+    </section>
+
+    <section id="about"
+      class="grid w-2/3 place-items-center pt-16 md:flex md:pt-0 md:place-items-start md:justify-between md:h-screen xl:h-full">
+      <aside class="w-full md:w-1/2 md:pt-5 xl:h-full 2xl:pt-8">
+        <h2 class="font-marcellus text-center text-3xl mb-5 2xl:text-4xl">SOBRE</h2>
+        <p class="font-poiret text-lg xl:text-xl 2xl:text-2xl">
+          SOMOS UMA AGÊNCIA FORMADA POR PROFISSIONAIS <span class="font-marcellus text-xl xl:text-2xl 2xl:text-3xl">APAIXONADOS</span> PELO <span
+            class="font-marcellus text-xl xl:text-2xl 2xl:text-3xl">UNIVERSO GASTRONÔMICO,</span> QUE COM MAIS DE TRÊS ANOS DE EXPERIÊNCIA EM
+          MARKETING DIGITAL, POSSUEM O CONHECIMENTO NECESSÁRIO PARA IMPULSIONAR A <span
+            class="font-marcellus text-xl xl:text-2xl 2xl:text-3xl">PRESENÇA ONLINE</span> DO SEU RESTAURANTE!
+          </br>
+          </br>
+          NOSSA EQUIPE COMBINA HABILIDADES SINGULARES PARA CRIAR CAMPANHAS INOVADORAS QUE DESTACAM A <span
+            class="font-marcellus text-xl xl:text-2xl 2xl:text-3xl">IDENTIDADE E A ESSÊNCIA</span> DE CADA ESTABELECIMENTO, JÁ QUE ACREDITAMOS
+          QUE CADA PRATO POSSUI UMA <span class="font-marcellus text-xl xl:text-2xl 2xl:text-3xl">HISTOŔIA ÚNICA</span> PARA CONTAR. POR ISSO,
+          DESENVOLVEMOS CAMPANHAS DE PUBLICIDADE QUE VALORIZAM A AUTENTICIDADE E CRIAM <span
+            class="font-marcellus text-xl xl:text-2xl 2xl:text-3xl">CONEXÕES REAIS</span> COM O SEU
+          PÚBLICO-ALVO.
+          </br>
+          </br>
+          <span class="font-marcellus text-2xl xl:text-3xl 2xl:text-4xl">VAMOS JUNTOS?</span>
+        </p>
+      </aside>
+
+      <aside
+        class="flex flex-col border-lightgrey border-t-[3px] md:border-t-[0px] mt-10 pt-5 md:place-items-end md:mt-0 md:w-2/5 xl:w-5/12 xl:h-full 2xl:pt-8">
+        <h2 class="font-marcellus text-center text-3xl mb-5 md:w-4/5 xl:w-full 2xl:text-4xl">EQUIPE</h2>
+
+        <div class="grid place-items-center pb-6 md:pb-2 md:w-4/5 xl:w-full xl:flex xl:gap-2">
+          <img class="rounded-full border-darkgrey border-[6px] mb-3 md:w-3/4 xl:w-1/2 xl:mb-0 2xl:w-2/5" src="/assets/dani.png"
+            alt="Fotografia de Daniela">
+          <div class="grid place-items-center xl:place-items-start">
+            <h2 class="font-marcellus text-2xl md:text-xl xl:text-3xl">DANIELA SANTANA</h2>
+            <p class="font-poiret text-lg md:text-sm xl:text-base">PRODUÇÃO AUDIOVISUAL</p>
+          </div>
+        </div>
+
+        <div class="grid place-items-center pb-6 md:pb-2 md:w-4/5 xl:w-full xl:flex xl:gap-2">
+          <img class="rounded-full border-darkgrey border-[6px] mb-3 md:w-3/4 xl:w-1/2 xl:mb-0 2xl:w-2/5" src="/assets/gabi.png"
+            alt="Fotografia de Gabriella">
+          <div class="grid place-items-center xl:place-items-start">
+            <h2 class="font-marcellus text-2xl md:text-xl xl:text-3xl">GABRIELLA BARBOSA</h2>
+            <p class="font-poiret text-lg md:text-sm xl:text-base">COMUNICAÇÃO VISUAL</p>
+          </div>
+        </div>
+
+        <div class="grid place-items-center pb-6 md:pb-2 md:w-4/5 xl:w-full xl:flex xl:gap-2">
+          <img class="rounded-full border-darkgrey border-[6px] mb-3 md:w-3/4 xl:w-1/2 xl:mb-0 2xl:w-2/5" src="/assets/rods.png"
+            alt="Fotografia de Rodrigo">
+          <div class="grid place-items-center xl:place-items-start">
+            <h2 class="font-marcellus text-2xl md:text-xl xl:text-3xl">RODRIGO AUGUSTO</h2>
+            <p class="font-poiret text-lg md:text-sm xl:text-base">GESTÃO CONTEÚDO</p>
+          </div>
+        </div>
+
+      </aside>
+    </section>
+
+  </main>
 </body>
 
 </html>
